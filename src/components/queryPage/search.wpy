@@ -376,10 +376,7 @@ export default class search extends wepy.component {
                     }
                 }
             })
-
-
         }
-
     }
     async findBooks() {
         try {

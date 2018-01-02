@@ -199,7 +199,6 @@ export default class lendRoom extends wepy.page {
             url: ''
         },
         loadShow: true
-
     }
 
     methods = {
@@ -218,12 +217,12 @@ export default class lendRoom extends wepy.page {
                 str = ''
             this.check.forEach((item, index) => {
                 if (item) {
-                    str += '$book=';
+                    str += '$book='
                     str += this.books[index].bookId
                 }
             })
-            str = str.slice(1);
-            str = str3 + str + '!?' + str;
+            str = str.slice(1)
+            str = str3 + str + '!?' + str
             this.barCode.url = str
             this.barCode.show = true
             wx.showLoading({
@@ -272,8 +271,8 @@ export default class lendRoom extends wepy.page {
         this.$apply()
     }
     formatDate(date) {
-        let unixTimestamp = new Date(date);
-        return unixTimestamp.toLocaleString();
+        let unixTimestamp = new Date(date)
+        return unixTimestamp.toLocaleString()
     }
 
 }

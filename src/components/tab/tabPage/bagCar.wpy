@@ -234,9 +234,8 @@ export default class Message extends wepy.component {
             show: false,
             url: ''
         },
-
-
     }
+
     methods = {
         CheckAll() {
             this.allCheck = !this.allCheck
@@ -275,7 +274,7 @@ export default class Message extends wepy.component {
                 if (item) {
                     str += '$book=' + this.carBooks[index].bookId + '$costmoney=' + '20'
                     str1 += "$book=" + this.carBooks[index].bookId
-                    checkNum += 1;
+                    checkNum += 1
                 }
             })
             str = str.slice(1)
@@ -382,7 +381,7 @@ export default class Message extends wepy.component {
             this.barCode.show = false
             this.$apply()
         } catch (error) {
-            console.log(error);
+            console.log(error)
         }
         console.log('bagCar')
     }
